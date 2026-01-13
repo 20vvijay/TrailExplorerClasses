@@ -1,8 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace Question2;
-
-using System.Security.Cryptography.X509Certificates;
+﻿namespace Question2;
 
 internal class Program
 {
@@ -57,7 +53,7 @@ class Explorer
         if (Trail.Contains(nextPosition))
         {
             Turn('R');
-            return TryMove(direction, turnCounter++);
+            return TryMove(direction, ++turnCounter);
         }
 
         return true;
